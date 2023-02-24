@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="Portfolio.css">
+
+
+    <style>
+        h1 {
+            color: #e740e4; /*färg på h1 text */
+            text-shadow: 2px 2px 0 #ccc; /*skugga i två olika riktningar, både x och y axeln samt färg på den*/
+        }
+
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100vh; /*100% av skärmens storlek*/
+
+        }
+
+        .box2, .box3, .box4 {
+            flex-basis: 25%; /*bredd på flex-element i flexkonteinern*/
+
+        }
+
+        .box3 {
+            margin-top: -20px; /* dra in på mellanrummet till översta elementet*/
+        }
+
+        .box1 {
+            display: flex; /*inuti containern kommer att ordnas i en flexbox, vilket ger oss möjligheten att placera och justera elementen i förhållande till varandra*/
+            flex-direction: column; /*centrerar innehåll verikalt tillsammans med nästa egenskap*/
+            justify-content: center;
+            align-items: center; /*horisontellt centrerad innehåll*/
+
+
+        }
+
+
+        .box1, .box4 {
+            background-color: rgba(241, 241, 241, 0.8); /*rgba-färgkod för bakgrundfärgen i diven med 80% opacitet*/
+        }
+
+        .box4 {
+            display: flex;
+            flex-direction: column; /*ska ordnas i columner i flexbox layout*/
+            justify-content: center; /*innehåll centreras*/
+            align-items: center; /*placerar innehåll horisontellt i mitten av elementet (diven box 4)*/
+            height: 100px; /*anger höjd på boxen*/
+
+
+        }
+
+
+        h2, p {
+            text-align: center; /*p och h2 horisontellt centrerade*/
+            margin: 15px; /*justerar placeringen av elementet med hjälp av mellanrum till andra elementet*/
+
+        }
+
+        .box2 {
+            background-image: url('https://i.imgur.com/rl0jOJz.jpg'); /*Länk till "bakgrundsbilden" till ruta nr2*/
+            background-size: cover; /*täcker hela rutan alltså box2*/
+            background-position: center; /*horisontella delen av bilden blir centrerad i elementet*/
+        }
+
+        .box4 h2 {
+            color: rgba(43, 93, 107, 0.99); /* ändra till önskad färg */
+            font-size: 18px; /* ändra till önskad fontstorlek */
+            font-style: italic; /* lägger till kursiv stil */
+        }
+
+        .box1 p, .box4 p {
+            letter-spacing: .0015em; /*mellanrum mellan bokstäver*/
+            font-family: Consolas, sans-serif; /*ändrade font*/
+            font-size: 15px; /*stolek på text (p) i box 1 och 4*/
+        }
+
+        .box1, .box2, .box3, .box4 {
+            flex-basis: 50%; /*Att alla boxar ska ha det förhållandet i mellan varandra (1:2)*/
+            height: 50vh; /*50% av skärmens höjd, höjdmått viewport*/
+            box-sizing: border-box; /*boxen förblir hela boxens storlek oavsett om man ändrar padding eller ej*/
+            padding: 20px; /*mellanrum mellan innehållet i elementet till kanten*/
+            border-radius: 8px; /*textrutans kant hur mycket den rundar*/
+        }
+
+        .image img {
+            max-width: 300px; /*Max bredd på bilden i diven image*/
+        }
+
+        img {
+            flex: 1; /*elementet tar upp hela ytan av container*/
+        }
+
+    </style>
+</head>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="Inlägg.html">Inspiration</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+    </ul>
+    <div class="navbar-image">
+        <div id="img2"><img id="img"
+                            src="http://orig11.deviantart.net/dcab/f/2011/158/1/6/nyan_cat_by_valcreon-d3iapfh.gif"
+                            alt="logocat"></div>
+    </div>
+</nav>
+
+<body>
+<div class="grid-container">
+    <div class="box1">
+
+
+        <h1>Välkommen till min digitala portfolio!</h1>
+        <p> Här får du en inblick i mina design- och kreativa projekt.
+            <br>
+            Jag tror på att skapa användarupplevelser som är både vackra och funktionella.
+            Bläddra igenom mina projekt och låt mig veta vad du tycker!
+
+
+        </p>
+
+    </div>
+    <div class="box2">
+
+    </div>
+
+    <div class="box3">
+        <div><img src="https://i.pinimg.com/originals/33/64/82/33648269eebe9930164c9a4fa04f8ff4.gif" alt="regnbåge">
+        </div>
+    </div>
+    <div class="box4">
+        <h2>Bettina: en webbutvecklare i framtiden, för framtiden.</h2>
+        <blockquote>
+            "Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But
+            it's worth it in the end because once you get there, you can move mountains."
+            <cite>- Steve Jobs</cite>
+        </blockquote>
+
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer">
+
+
+        <div class="socialamedier"
+             style="display: flex; justify-content: center; align-items: center; padding-top: 90px;">
+            <div class="social-icons">
+                <a href="https://open.spotify.com/user/albinoe?si=542077c4462e4e45"><img
+                        src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png"
+                        alt="spotify"></a>
+                <a href="https://www.instagram.com/bettobox/"><img
+                        src="https://www.edigitalagency.com.au/wp-content/uploads/new-small-Instagram-logo-full-colour-png-184x184-pixels.png"
+                        alt="Instagram"></a>
+                <a href="https://github.com/Betttina/"><img
+                        src="https://www.freeiconspng.com/thumbs/github-logo-icon/github-logo-icon-22.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/bettinatothh/"><img
+                        src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin"></a>
+            </div>
+
+        </div>
+
+
+        <div><img src="https://i.imgur.com/FycxgU4.jpg" alt="bettinalogo" style="height: 200px; width: 200px;"></div>
+    </div>
+
+
+</footer>
+
+</body>
+</html>

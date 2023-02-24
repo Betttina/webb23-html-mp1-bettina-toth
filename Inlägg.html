@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inspiration</title>
+    <link rel="stylesheet" type="text/css" href="Portfolio.css">
+    <link rel="stylesheet" type="text/html" href="index.html">
+    <link rel="stylesheet" type="text/html" href="Kontakt.html">
+
+
+    <style>
+        .image-gallery {
+            display: flex; /* hur element i en layout ska styras i en conteiner*/
+            flex-direction: column; /* bildstamplarna går i kolumner*/
+            gap: 10px; /*mellanrum mellan kolumnerna*/
+        }
+
+        .image-gallery .column {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .image-item img {
+            width: 100%; /* de täcker hela rutan de får i flexboxen till denna procentandelen*/
+            border-radius: 5px; /* kanterna på bilderna hur mycket de ska dras in*/
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .image-gallery {
+                flex-direction: row; /*element anordnas i horisontell riktning, vänster till höger*/
+            }
+
+        }
+
+        .image-item img {
+            transition: transform 0.5s ease-in-out; /* hur fort bilderna ska ändra zoomning */
+        }
+
+        .image-item:hover img {
+            transform: scale(1.2); /* hur mycket i en skala bilden zoomas in när man hovrar*/
+        }
+
+
+        .container {
+            display: flex; /* arrangeras i flexbox*/
+        }
+
+        .box1 {
+            width: 90%;
+            height: auto;
+            margin: 20px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin: 20px;
+        }
+
+        .box2, .box3 {
+
+            width: 90%;
+            height: 50%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .box2 a {
+            color: #177c5d;
+        }
+
+
+        .box1, .box2, .box3 {
+            background-color: rgba(241, 241, 241, 0.6); /*färg sen opacitetgrad*/
+            padding: 25px; /*mellanrum mot andra element*/
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*skuggans position (x och y-axeln) skuggans utbredning 10px, rgba färgkod och mått på opacitet*/
+        }
+
+        .galleri-beskriv {
+
+
+            text-align: center;
+            background-color: rgba(241, 241, 241, 0.6);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1; /*hamnar överst*/
+
+        }
+
+        blockquote:before {
+            content: open-quote; /*lägger till inledande citattecken*/
+            font-size: 4em; /*storlek på fonten*/
+            line-height: 0.1em; /*höjden av sträcken*/
+            margin-right: 0.25em;
+            vertical-align: -0.4em; /* hur kursivt det blir */
+        }
+
+        blockquote:after {
+            content: close-quote; /*avslutningscitattecken*/
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-left: 0.25em;
+            vertical-align: -0.4em;
+        }
+
+        blockquote {
+            font-size: 18px;
+            font-style: italic;
+            color: #122d5d;
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<nav class="helanavbar">
+    <div class="navbar-image">
+        <div class="navbar-image">
+            <div id="img2"><img id="img"
+                                src="http://orig11.deviantart.net/dcab/f/2011/158/1/6/nyan_cat_by_valcreon-d3iapfh.gif"
+                                alt="logocat"></div>
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="Inlägg.html">Inspiration</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+    </ul>
+
+</nav>
+
+<div class="container">
+
+
+    <div class="box1">
+        <h2>Det lätta i livet som ser svårt ut</h2>
+        <p>Jag vill inspirera dig att hitta det som verkligen betyder något i livet, något som har ett värde för dig.
+            Det kan vara svårt att se det lätta i det som verkar komplicerat och krångligt, men det är precis det jag
+            vill hjälpa dig med.
+
+            Jag är ständigt fascinerad av organisk verksamhet och hur vi kan skapa hållbara lösningar för att ta hand om
+            vår planet. Jag tror på att vi alla kan göra skillnad och att små förändringar kan leda till stora resultat.
+            Det är därför jag beundrar företag som strävar efter att göra världen till en bättre plats, precis som jag
+            själv vill göra.
+            <br><br>
+            När jag skapar mina projekt och min konst enligt mina designprinciper, inspireras jag av:
+            <br>
+        <ul>
+            <li><b>Lady Gaga</b> och hennes otroliga kreativitet. Hon visar oss att det inte finns några gränser för vad
+                vi kan åstadkomma om vi bara tror på oss själva och vågar ta steget.
+            </li>
+            <li><b>Modern teknologi.</b> Jag har länkat till en webbsida i andra rutan om Googles egna plattform: Chrome
+                Experiments är en uppvisning av arbete av kodare som expanderar på gränserna för webbteknik och skapar
+                vackra, unika webbupplevelser.
+            </li>
+            <li><b>Vintage inredning.</b> Kan väl även kallas tidlös design. Jag har lyft Zara Homes hemsida då jag
+                tycker att det är en riktigt cool webbplats som framhäver detta på ett fast-fashion sätt.
+            </li>
+        </ul>
+        <br>
+        <p>Jag vill visa dig hur jag prioriterar det som är viktigt för att skapa harmoni i mitt liv och i mina projekt.
+            Jag tror på enkelhet och simpelhet som grund för att skapa användarvänliga och effektiva lösningar. Men jag
+            tror också på att det finns mer än så i livet - känslor, passion och inspiration är lika viktiga faktorer
+            som hjälper oss att nå våra mål och drömmar.
+
+            Så, sluta leta efter det du tror att du behöver och låt mig visa dig det som verkligen betyder något.
+            <br>På min hemsida hittar du min portfolio, där jag visar upp mina projekt och mina kunskaper inom
+            webbutveckling. Jag hoppas att min passion och kreativitet kommer att inspirera dig att hitta ditt eget sätt
+            att skapa en bättre värld.</p>
+        <br> <br>
+        <blockquote>Design is not just what it looks like and feels like.<br> Design is how it works. - Steve Jobs
+        </blockquote>
+    </div>
+
+
+    <div class="column">
+
+        <div class="box2">
+            <h2>Inspirerande hemsidor</h2>
+            <a href="https://www.zarahome.com" target="_blank">Zara Homes hemsida</a>
+            <br><br>
+            <a href="https://www.hauslabs.com/" target="_blank">Haus Labs</a>
+            <br><br>
+            <a href="https://experiments.withgoogle.com/collection/chrome" target="_blank">Experiments with Google</a>
+
+        </div>
+
+        <div class="box3">
+            <h2>Mer om mig</h2>
+            <p>Jag pluggar till webbutvecklare och har en passion för enkelhet och simpelhet. På min hemsida hittar du
+                min portfolio där jag visar upp mina projekt och mina kunskaper inom webbutveckling. Hoppas att jag kan
+                inspirera dig att hitta ditt eget sätt att skapa en bättre värld.</p>
+            <div class="galleri-beskriv">
+
+                <h2>En samling från mitt galleri</h2>
+                <p>Dessa kan betraktas som inspiration eller lite mer insyn i mitt liv. Katten föreställer mitt husdjur;
+                    Galileo.
+                    Han är väldigt fotogenisk. Alla fotografier har jag tagit själv med min mobilkamera.</p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="image-gallery">
+    <div class="column">
+        <div class="image-item">
+            <img src="https://i.imgur.com/Ol3kkVM.jpg" alt="treklöver"/>
+            <div class="overlay"></div>
+        </div>
+        <div class="image-item">
+            <img src="https://i.imgur.com/9GV79CZ.jpg" alt="Skopje"/>
+            <div class="overlay"></div>
+        </div>
+        <div class="image-item">
+            <img src="https://i.imgur.com/gi3wQI1.jpg" alt="eggplant"/>
+            <div class="overlay"></div>
+        </div>
+        <div class="image-item">
+            <img src="https://i.imgur.com/Jmuh2FI.jpg" alt="Fahlmans"/>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="image-item">
+            <img src="https://i.imgur.com/TRUAp4J.jpg" alt="fluff"/>
+            <div class="overlay"></div>
+        </div>
+        <div class="image-item">
+            <img src="https://i.imgur.com/51XeDgd.jpg" alt="torg"/>
+            <div class="overlay"></div>
+        </div>
+        <div class="image-item">
+            <img src="https://i.imgur.com/2cX0Q9P.jpg" alt="bluehat"/>
+            <div class="overlay"></div>
+        </div>
+        <div class="image-item">
+            <img src="https://i.imgur.com/FFCmesj.jpg" alt="capy"/>
+            <div class="overlay"></div>
+        </div>
+
+
+    </div>
+
+
+    <div class="column">
+        <div class="image-item">
+            <img src="https://i.imgur.com/L1QuibK.jpg" alt="brygga"/>
+            <div class="overlay"></div>
+        </div>
+
+        <div class="image-item">
+            <img src="https://i.imgur.com/7lhvHFv.jpg" alt="solnedgång"/>
+            <div class="overlay"></div>
+        </div>
+        <div class="image-item">
+            <img src="https://i.imgur.com/CKk0uYy.jpg" alt="tall"/>
+            <div class="overlay"></div>
+        </div>
+    </div>
+
+
+    <div class="column">
+        <div class="image-item">
+            <img src="https://i.imgur.com/59FFASw.jpg" alt="darkness"/>
+            <div class="overlay"></div>
+        </div>
+        <div class="image-item">
+            <img src="https://i.imgur.com/RedakV5.jpg" alt="Galli"/>
+            <div class="overlay"></div>
+        </div>
+        <div class="image-item">
+            <img src="https://i.imgur.com/KUdqKDS.jpg" alt="stockholm"/>
+            <div class="overlay"></div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
+

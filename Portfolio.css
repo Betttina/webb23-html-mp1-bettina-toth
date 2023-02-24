@@ -1,0 +1,202 @@
+
+/* bakgrundsbild */
+body {
+    background-image: url("https://images.pexels.com/photos/6775241/pexels-photo-6775241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* bakgrundsbild*/
+
+
+
+
+
+/* kod till navigationsmenyn högst upp*/
+
+.nav, .helanavbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+
+
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+li {
+    position: relative;
+    margin: 0 15px;
+}
+
+a {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50% / 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+a:hover::before {
+    opacity: 1; }
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Consolas, sans-serif;
+    display: block;
+    transform-style: preserve-3d;
+    padding: 20px;
+}
+
+nav a:hover {
+    color: #131467;
+background-color: #f5bae4;
+    transform: rotateX(30deg) translateY(-10px);
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+}
+
+.navbar-image img {
+    width: 100px;
+    height: auto;
+    margin-left: 100px;
+    padding-left: 0;
+}
+
+
+
+
+
+/* slut på kod för navigationsmeny */
+
+/* för textruta på landingpage */
+.text-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(241, 241, 241, 0.6);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    flex-direction: column;
+}
+
+.text-box h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    z-index: 2;
+    color: #165757;
+}
+
+.text-box p {
+    font-size: 18px
+
+}
+
+.apkss-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* textruta för landingpage^ */
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.media .content {
+    flex: 1;
+    padding: 10px;
+}
+
+.image img {
+    max-width: 300px;
+}
+.media .content {
+    flex: 1;
+    padding: 10px;
+}
+
+.image {
+    flex: 1;
+}
+/* ^^ till min div med bild*/
+/* sociala medier */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #5d9d98;
+    color: white;
+    text-align: center;
+    border-radius: 9000px;
+}
+a i {
+    display: inline-block;
+    margin-right: 9px; /* justera det här värdet för att ändra mellanrummet mellan ikonen och texten */
+}
